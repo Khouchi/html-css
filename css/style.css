@@ -1,0 +1,51 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+header::after, section::before{
+    content: '';
+    float: none;
+    clear: both;
+    display: block;
+}
+header{
+    background-color: #c9efff;
+    height: 5.5rem;
+
+}
+header nav a{
+    text-decoration: none;
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 5.5rem;
+    color: black;
+    font-weight: 600;
+}
+header nav a:first-child{
+    display: none;
+}
+section div, section figure{
+    width: 50%;
+    float:left;
+}
+
+
+
+@media (max-width: 790px){
+    header{
+        height: 16rem;
+    }
+    header nav a{
+        display: block;
+        float: none;
+        width: 100%;
+        line-height: 2.5rem;
+    }
+    header nav a:first-child{
+        display: block;
+    }
+    header nav a:nth-child(4){
+        display: none;
+    }
+}

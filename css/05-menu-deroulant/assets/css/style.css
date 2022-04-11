@@ -1,0 +1,26 @@
+ul li{
+   font-size: 1.5rem;
+   text-transform: uppercase;
+}
+ul li a{
+    text-decoration: none;
+    color: crimson;
+}
+.principale{
+    line-height: 2.5rem;
+    float: left;
+    width: 33.3%;
+    background-color: lightpink;
+    text-align: center;
+}
+.principale > a:hover{
+    color: darkred;
+}
+.principale .secondaire{
+    background-color: bisque;
+    display: none;
+    /* opacity: 0; */
+}
+.principale:hover .secondaire{
+    display: block;
+}
